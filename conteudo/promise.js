@@ -49,6 +49,7 @@ const pegarPedidos = (idUsuaria) => {
             pedido1: "adesivo",
             pedido2: "caneca",
             pedido3: "mouse",
+            pedido4: "garaffa",
           })
       }, 2500)
   })
@@ -56,15 +57,16 @@ const pegarPedidos = (idUsuaria) => {
 
 pegarUsuaria()
   .then((usuaria) => {
-    return pegarEndereco(usuaria.id)
+    return pegarEndereco(usuaria.identificacao)
       .then((endereco) => {
-        return pegarPedidos(usuaria.id)
+        return pegarPedidos(usuaria.identificacao)
           .then((historico) => {
             console.log(`
               Usuária: ${usuaria.nome}
               E-mail: ${usuaria.email}
               Endereco: ${endereco.rua}, ${endereco.numero}, ${endereco.cidade}
               Pedidos: ${historico.pedido1}, ${historico.pedido2}, ${historico.pedido3}
+              identificação da usuária:${usuaria.id} 
             `)
           })
       })

@@ -47,11 +47,10 @@ const pegarPedidos = (idUsuaria) => {
           })
       }, 2500)
   })
-}
+} 
 
 async function resolverPromise() {
   try {
-    // console.time('Karoline Macêdo')
     const usuaria = await pegarUsuaria()
     const endereco = await pegarEndereco(usuaria.id)
     const historico = await pegarPedidos(usuaria.id)
@@ -67,8 +66,7 @@ async function resolverPromise() {
       Endereco: ${endereco.rua}, ${endereco.numero}, ${endereco.cidade}
       Pedidos: ${historico.pedido1}, ${historico.pedido2}, ${historico.pedido3}
     `)
-    // console.timeEnd('Karoline Macêdo')
-  }
+      }
   catch(error) {
     console.error('Capturei um erro ', error)
   }

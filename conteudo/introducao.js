@@ -1,24 +1,23 @@
-// console.log('oi')
-// let nome 
-// setTimeout(() => nome = "meuja", 2 * 1000)
-// console.log('e')
-// console.log('natália')
-// console.log(nome)
+console.log('oi')
+let nome 
+setTimeout(() => nome = "meuja", 2 * 1000)
+console.log('e')
+console.log('natália')
+console.log(nome)
 
-// setTimeOut
 // setTimeout(() => {}, 7.5 * 1000)
 
-// function name() {
-//   return 
-// }
+function name() {
+  return 
+}
 
-// () => nome = "meuja"
+() => nome = "meuja"
 
-// console.log('Esse console vai retornar primeiro')
-// setTimeout(() => console.log('Esse console vai retornar segundo'), 2000)
-// console.log('Esse console vai retornar por último')
+console.log('Esse console vai retornar primeiro')
+setTimeout(() => console.log('Esse console vai retornar segundo'), 2000)
+console.log('Esse console vai retornar por último')
 
-let time
+let time = "quero saber que tempo isso roda"
 
 setTimeout(() => {
   console.log("Flamengo")

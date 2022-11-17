@@ -4,7 +4,7 @@ try {
   nome = "Leinane"
   console.log(nome)
 }
-catch(error) {
+catch(error) { 
   console.error('Capturei um erro ', error)
 }
 

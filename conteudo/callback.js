@@ -96,4 +96,11 @@ const usuaria = pegarUsuaria((erro, usuaria) => {
     })
   })
 }) 
+setTimeout(()=>console.log("Gabizinha"), 3*1000)
 
+// function verificarNumeros ((numeros, usuarias)=> {
+//   if (numeros){
+//     return console.table("alecrim dourado que nasceu do campo sem ser semeado")
+//   } 
+
+// })
